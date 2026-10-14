@@ -1,8 +1,12 @@
-"""Ethanol margins — JSA
-Three tabs:
-  1. Report Style  — three-location gross margin matching the JSA Ethanol Margins report
-  2. Sensitivity Matrix — AMS cash-price matrix (ethanol × corn grid)
-  3. CU Curve & RINs — Chicago ethanol forward curve, corn/gas strips, RINs
+"""Ethanol — JSA
+Three views, one at a time (selector under the title):
+  Ethanol Margins  — three tabs:
+    1. Report Style  — three-location gross margin matching the JSA Ethanol Margins report
+    2. Sensitivity Matrix — AMS cash-price matrix (ethanol × corn grid)
+    3. CU Curve & RINs — Chicago ethanol forward curve, corn/gas strips, RINs
+  Ethanol Exports  — U.S. fuel ethanol exports by destination (EIA; see ethanol_exports.py)
+  Weekly EIA       — the JSA-style Weekly EIA Report (see weekly_eia.py)
+The two EIA views need EIA_API_KEY in the app's secrets; the margin tabs never did.
 """
 from __future__ import annotations
 
@@ -21,6 +25,8 @@ from common import (
     load_ams_plant_corn, load_ams_weekly, load_curve, load_hh, load_hist,
     load_zc_dec_archive, oil_ratio_anchor, plotly_base, plotly_cfg,
 )
+from ethanol_exports import render_ethanol_exports
+from weekly_eia import render_weekly_eia
 
 today = date.today()
 
@@ -627,6 +633,27 @@ def render_curve_tab(api_key: str, weekly: pd.DataFrame, report_ctx: dict | None
 # ─────────────────────────────────────────────────────────────────────────────
 # PAGE
 # ─────────────────────────────────────────────────────────────────────────────
+def render_margins(api_key: str) -> None:
+    """The ethanol margin tabs: Report Style / Sensitivity Matrix / CU Curve & RINs."""
+    weekly = load_ams_weekly(today.isoformat())
+    plant_corn = load_ams_plant_corn(today.isoformat())
+
+    if not len(weekly):
+        st.error("No AMS ethanol data. Run `python ethanol_grind.py` in the ethanol-margin-matrix folder.")
+        return
+
+    tab1, tab2, tab3 = st.tabs(["Report Style", "Sensitivity Matrix", "CU Curve & RINs"])
+
+    with tab1:
+        report_ctx = render_report_tab(api_key, weekly)
+
+    with tab2:
+        render_matrix_tab(weekly, plant_corn)
+
+    with tab3:
+        render_curve_tab(api_key, weekly, report_ctx)
+
+
 st.title("🌽 Ethanol")
 
 api_key = get_api_key()
@@ -636,20 +663,19 @@ with st.sidebar:
     else:
         st.error("MASSIVE_API_KEY not found — add to .env or Streamlit secrets")
 
-weekly = load_ams_weekly(today.isoformat())
-plant_corn = load_ams_plant_corn(today.isoformat())
+# One view at a time. Only the selected view runs, so a click in one never re-runs the others
+# (st.tabs runs every tab body on every interaction, which would pull the EIA data and the futures
+# curves together). The view is kept in the URL (?view=exports) so a link opens straight to it.
+VIEWS = {"margins": "Ethanol Margins", "exports": "Ethanol Exports", "weekly-eia": "Weekly EIA"}
+if "eth_view" not in st.session_state:
+    st.session_state["eth_view"] = VIEWS.get(st.query_params.get("view", ""), VIEWS["margins"])
+view = st.segmented_control("View", list(VIEWS.values()), required=True, key="eth_view",
+                            label_visibility="collapsed")
+st.query_params["view"] = next(slug for slug, label in VIEWS.items() if label == view)
 
-if not len(weekly):
-    st.error("No AMS ethanol data. Run `python ethanol_grind.py` in the ethanol-margin-matrix folder.")
-    st.stop()
-
-tab1, tab2, tab3 = st.tabs(["Report Style", "Sensitivity Matrix", "CU Curve & RINs"])
-
-with tab1:
-    report_ctx = render_report_tab(api_key, weekly)
-
-with tab2:
-    render_matrix_tab(weekly, plant_corn)
-
-with tab3:
-    render_curve_tab(api_key, weekly, report_ctx)
+if view == "Ethanol Exports":
+    render_ethanol_exports()
+elif view == "Weekly EIA":
+    render_weekly_eia()
+else:
+    render_margins(api_key)
