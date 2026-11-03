@@ -10121,8 +10121,6 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-09-14,Distillers Grain,Minnesota,Wet 65-70%,Truck,50.0,50.0,50.0,$ Per Ton
 2026-09-14,Distillers Grain,Missouri,Dried 10%,Truck,210.0,205.0,215.0,$ Per Ton
 2026-09-14,Distillers Grain,Missouri,Wet 65-70%,Truck,61.0,61.0,61.0,$ Per Ton
-2026-09-14,Distillers Grain,N/A,Dried 10%,Ocean Vessel,248.67,242.0,254.0,$ Per Ton
-2026-09-14,Distillers Grain,N/A,Dried 10%,Rail,260.0,260.0,260.0,$ Per Ton
 2026-09-14,Distillers Grain,Nebraska,Wet 65-70%,Truck,60.0,50.0,68.0,$ Per Ton
 2026-09-14,Distillers Grain,Nebraska,Modified Wet 55-60%,Truck,78.5,70.0,87.0,$ Per Ton
 2026-09-14,Distillers Grain,Nebraska,Dried 10%,Truck,188.6,175.0,200.0,$ Per Ton
@@ -10133,6 +10131,8 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-09-14,Distillers Grain,South Dakota,Wet 65-70%,Truck,51.0,50.0,52.0,$ Per Ton
 2026-09-14,Distillers Grain,Wisconsin,Modified Wet 55-60%,Truck,75.0,75.0,75.0,$ Per Ton
 2026-09-14,Distillers Grain,Wisconsin,Dried 10%,Truck,165.0,165.0,165.0,$ Per Ton
+2026-09-14,Distillers Grain,,Dried 10%,Ocean Vessel,248.67,242.0,254.0,$ Per Ton
+2026-09-14,Distillers Grain,,Dried 10%,Rail,260.0,260.0,260.0,$ Per Ton
 2026-09-14,Ethanol,Illinois,,Truck,2.07,2.07,2.07,$ Per Gallon
 2026-09-14,Ethanol,Illinois,,Rail,2.03,2.03,2.03,$ Per Gallon
 2026-09-14,Ethanol,Indiana,,Rail,2.075,2.07,2.08,$ Per Gallon
@@ -10164,8 +10164,6 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-09-21,Distillers Grain,Minnesota,Modified Wet 55-60%,Truck,60.0,60.0,60.0,$ Per Ton
 2026-09-21,Distillers Grain,Missouri,Dried 10%,Truck,212.5,210.0,215.0,$ Per Ton
 2026-09-21,Distillers Grain,Missouri,Wet 65-70%,Truck,61.0,61.0,61.0,$ Per Ton
-2026-09-21,Distillers Grain,N/A,Dried 10%,Rail,265.0,265.0,265.0,$ Per Ton
-2026-09-21,Distillers Grain,N/A,Dried 10%,Ocean Vessel,257.67,250.0,265.0,$ Per Ton
 2026-09-21,Distillers Grain,Nebraska,Wet 65-70%,Truck,55.0,45.0,65.0,$ Per Ton
 2026-09-21,Distillers Grain,Nebraska,Modified Wet 55-60%,Truck,70.0,70.0,70.0,$ Per Ton
 2026-09-21,Distillers Grain,Nebraska,Dried 10%,Truck,202.5,190.0,225.0,$ Per Ton
@@ -10176,6 +10174,8 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-09-21,Distillers Grain,South Dakota,Dried 10%,Truck,186.67,170.0,205.0,$ Per Ton
 2026-09-21,Distillers Grain,Wisconsin,Modified Wet 55-60%,Truck,77.0,77.0,77.0,$ Per Ton
 2026-09-21,Distillers Grain,Wisconsin,Dried 10%,Truck,172.5,170.0,175.0,$ Per Ton
+2026-09-21,Distillers Grain,,Dried 10%,Rail,265.0,265.0,265.0,$ Per Ton
+2026-09-21,Distillers Grain,,Dried 10%,Ocean Vessel,257.67,250.0,265.0,$ Per Ton
 2026-09-21,Ethanol,Illinois,,Truck,2.18,2.18,2.18,$ Per Gallon
 2026-09-21,Ethanol,Illinois,,Rail,2.03,2.03,2.03,$ Per Gallon
 2026-09-21,Ethanol,Indiana,,Rail,2.075,2.07,2.08,$ Per Gallon
@@ -10209,9 +10209,6 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-09-28,Distillers Grain,Minnesota,Wet 65-70%,Truck,55.0,55.0,55.0,$ Per Ton
 2026-09-28,Distillers Grain,Missouri,Wet 65-70%,Truck,61.0,61.0,61.0,$ Per Ton
 2026-09-28,Distillers Grain,Missouri,Dried 10%,Truck,212.5,210.0,215.0,$ Per Ton
-2026-09-28,Distillers Grain,N/A,Dried 10%,Ocean Vessel,254.5,245.0,260.0,$ Per Ton
-2026-09-28,Distillers Grain,N/A,Dried 10%,Rail,260.0,260.0,260.0,$ Per Ton
-2026-09-28,Distillers Grain,N/A,Dried 10%,Rail/Barge,216.0,216.0,216.0,$ Per Ton
 2026-09-28,Distillers Grain,Nebraska,Modified Wet 55-60%,Truck,70.0,70.0,70.0,$ Per Ton
 2026-09-28,Distillers Grain,Nebraska,Dried 10%,Truck,207.5,195.0,225.0,$ Per Ton
 2026-09-28,Distillers Grain,Nebraska,Wet 65-70%,Truck,59.33,45.0,68.0,$ Per Ton
@@ -10222,6 +10219,9 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-09-28,Distillers Grain,South Dakota,Dried 10%,Truck,195.0,185.0,215.0,$ Per Ton
 2026-09-28,Distillers Grain,Wisconsin,Modified Wet 55-60%,Truck,77.0,77.0,77.0,$ Per Ton
 2026-09-28,Distillers Grain,Wisconsin,Dried 10%,Truck,172.5,170.0,175.0,$ Per Ton
+2026-09-28,Distillers Grain,,Dried 10%,Ocean Vessel,254.5,245.0,260.0,$ Per Ton
+2026-09-28,Distillers Grain,,Dried 10%,Rail,260.0,260.0,260.0,$ Per Ton
+2026-09-28,Distillers Grain,,Dried 10%,Rail/Barge,216.0,216.0,216.0,$ Per Ton
 2026-09-28,Ethanol,Illinois,,Truck,2.15,2.15,2.15,$ Per Gallon
 2026-09-28,Ethanol,Illinois,,Rail,2.03,2.03,2.03,$ Per Gallon
 2026-09-28,Ethanol,Indiana,,Rail,2.075,2.07,2.08,$ Per Gallon
@@ -10260,9 +10260,6 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-10-05,Distillers Grain,Minnesota,Wet 65-70%,Truck,55.0,55.0,55.0,$ Per Ton
 2026-10-05,Distillers Grain,Missouri,Dried 10%,Truck,212.5,210.0,215.0,$ Per Ton
 2026-10-05,Distillers Grain,Missouri,Wet 65-70%,Truck,61.0,61.0,61.0,$ Per Ton
-2026-10-05,Distillers Grain,N/A,Dried 10%,Rail/Barge,216.0,216.0,216.0,$ Per Ton
-2026-10-05,Distillers Grain,N/A,Dried 10%,Rail,260.0,260.0,260.0,$ Per Ton
-2026-10-05,Distillers Grain,N/A,Dried 10%,Ocean Vessel,277.5,275.0,280.0,$ Per Ton
 2026-10-05,Distillers Grain,Nebraska,Dried 10%,Truck,207.5,195.0,215.0,$ Per Ton
 2026-10-05,Distillers Grain,Nebraska,Modified Wet 55-60%,Truck,70.0,70.0,70.0,$ Per Ton
 2026-10-05,Distillers Grain,Nebraska,Wet 65-70%,Truck,63.33,50.0,72.0,$ Per Ton
@@ -10273,6 +10270,9 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-10-05,Distillers Grain,South Dakota,Wet 65-70%,Truck,59.0,58.0,60.0,$ Per Ton
 2026-10-05,Distillers Grain,Wisconsin,Modified Wet 55-60%,Truck,79.0,79.0,79.0,$ Per Ton
 2026-10-05,Distillers Grain,Wisconsin,Dried 10%,Truck,175.0,175.0,175.0,$ Per Ton
+2026-10-05,Distillers Grain,,Dried 10%,Rail/Barge,216.0,216.0,216.0,$ Per Ton
+2026-10-05,Distillers Grain,,Dried 10%,Rail,260.0,260.0,260.0,$ Per Ton
+2026-10-05,Distillers Grain,,Dried 10%,Ocean Vessel,277.5,275.0,280.0,$ Per Ton
 2026-10-05,Ethanol,Illinois,,Truck,2.05,2.05,2.05,$ Per Gallon
 2026-10-05,Ethanol,Iowa,,Rail,1.975,1.96,1.99,$ Per Gallon
 2026-10-05,Ethanol,Iowa,,Truck,2.005,1.95,2.05,$ Per Gallon
@@ -10309,9 +10309,6 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-10-12,Distillers Grain,Minnesota,Wet 65-70%,Truck,55.0,55.0,55.0,$ Per Ton
 2026-10-12,Distillers Grain,Missouri,Wet 65-70%,Truck,61.0,61.0,61.0,$ Per Ton
 2026-10-12,Distillers Grain,Missouri,Dried 10%,Truck,212.5,210.0,215.0,$ Per Ton
-2026-10-12,Distillers Grain,N/A,Dried 10%,Ocean Vessel,247.5,242.0,257.0,$ Per Ton
-2026-10-12,Distillers Grain,N/A,Dried 10%,Rail,255.0,255.0,255.0,$ Per Ton
-2026-10-12,Distillers Grain,N/A,Dried 10%,Rail/Barge,216.0,216.0,216.0,$ Per Ton
 2026-10-12,Distillers Grain,Nebraska,Wet 65-70%,Truck,63.33,50.0,72.0,$ Per Ton
 2026-10-12,Distillers Grain,Nebraska,Modified Wet 55-60%,Truck,75.0,75.0,75.0,$ Per Ton
 2026-10-12,Distillers Grain,Nebraska,Dried 10%,Truck,205.0,195.0,215.0,$ Per Ton
@@ -10322,6 +10319,9 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-10-12,Distillers Grain,South Dakota,Dried 10%,Truck,193.33,185.0,210.0,$ Per Ton
 2026-10-12,Distillers Grain,Wisconsin,Modified Wet 55-60%,Truck,79.0,79.0,79.0,$ Per Ton
 2026-10-12,Distillers Grain,Wisconsin,Dried 10%,Truck,175.0,175.0,175.0,$ Per Ton
+2026-10-12,Distillers Grain,,Dried 10%,Ocean Vessel,247.5,242.0,257.0,$ Per Ton
+2026-10-12,Distillers Grain,,Dried 10%,Rail,255.0,255.0,255.0,$ Per Ton
+2026-10-12,Distillers Grain,,Dried 10%,Rail/Barge,216.0,216.0,216.0,$ Per Ton
 2026-10-12,Ethanol,Illinois,,Truck,2.1,2.1,2.1,$ Per Gallon
 2026-10-12,Ethanol,Illinois,,Rail,2.095,2.09,2.1,$ Per Gallon
 2026-10-12,Ethanol,Indiana,,Rail,2.155,2.14,2.17,$ Per Gallon
@@ -10360,8 +10360,6 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-10-19,Distillers Grain,Minnesota,Dried 10%,Truck,181.25,170.0,190.0,$ Per Ton
 2026-10-19,Distillers Grain,Missouri,Dried 10%,Truck,210.0,205.0,215.0,$ Per Ton
 2026-10-19,Distillers Grain,Missouri,Wet 65-70%,Truck,61.0,61.0,61.0,$ Per Ton
-2026-10-19,Distillers Grain,N/A,Dried 10%,Ocean Vessel,241.0,238.0,245.0,$ Per Ton
-2026-10-19,Distillers Grain,N/A,Dried 10%,Rail,245.0,245.0,245.0,$ Per Ton
 2026-10-19,Distillers Grain,Nebraska,Wet 65-70%,Truck,65.0,55.0,80.0,$ Per Ton
 2026-10-19,Distillers Grain,Nebraska,Modified Wet 55-60%,Truck,75.0,75.0,75.0,$ Per Ton
 2026-10-19,Distillers Grain,Nebraska,Dried 10%,Truck,203.75,185.0,220.0,$ Per Ton
@@ -10372,6 +10370,8 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-10-19,Distillers Grain,South Dakota,Dried 10%,Truck,188.33,185.0,195.0,$ Per Ton
 2026-10-19,Distillers Grain,Wisconsin,Modified Wet 55-60%,Truck,78.0,78.0,78.0,$ Per Ton
 2026-10-19,Distillers Grain,Wisconsin,Dried 10%,Truck,174.0,173.0,175.0,$ Per Ton
+2026-10-19,Distillers Grain,,Dried 10%,Ocean Vessel,241.0,238.0,245.0,$ Per Ton
+2026-10-19,Distillers Grain,,Dried 10%,Rail,245.0,245.0,245.0,$ Per Ton
 2026-10-19,Ethanol,Illinois,,Truck,2.04,2.04,2.04,$ Per Gallon
 2026-10-19,Ethanol,Illinois,,Rail,2.095,2.09,2.1,$ Per Gallon
 2026-10-19,Ethanol,Indiana,,Rail,2.155,2.14,2.17,$ Per Gallon
@@ -10408,8 +10408,6 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-10-26,Distillers Grain,Minnesota,Dried 10%,Truck,175.0,170.0,180.0,$ Per Ton
 2026-10-26,Distillers Grain,Missouri,Wet 65-70%,Truck,61.0,61.0,61.0,$ Per Ton
 2026-10-26,Distillers Grain,Missouri,Dried 10%,Truck,210.0,205.0,215.0,$ Per Ton
-2026-10-26,Distillers Grain,N/A,Dried 10%,Ocean Vessel,239.33,235.0,245.0,$ Per Ton
-2026-10-26,Distillers Grain,N/A,Dried 10%,Rail,245.0,245.0,245.0,$ Per Ton
 2026-10-26,Distillers Grain,Nebraska,Wet 65-70%,Truck,65.0,55.0,80.0,$ Per Ton
 2026-10-26,Distillers Grain,Nebraska,Modified Wet 55-60%,Truck,75.0,75.0,75.0,$ Per Ton
 2026-10-26,Distillers Grain,Nebraska,Dried 10%,Truck,202.5,180.0,220.0,$ Per Ton
@@ -10420,6 +10418,8 @@ date,commodity,state,variety,trans_mode,price,price_min,price_max,unit
 2026-10-26,Distillers Grain,South Dakota,Dried 10%,Truck,180.0,170.0,190.0,$ Per Ton
 2026-10-26,Distillers Grain,Wisconsin,Modified Wet 55-60%,Truck,78.0,78.0,78.0,$ Per Ton
 2026-10-26,Distillers Grain,Wisconsin,Dried 10%,Truck,174.0,173.0,175.0,$ Per Ton
+2026-10-26,Distillers Grain,,Dried 10%,Ocean Vessel,239.33,235.0,245.0,$ Per Ton
+2026-10-26,Distillers Grain,,Dried 10%,Rail,245.0,245.0,245.0,$ Per Ton
 2026-10-26,Ethanol,Illinois,,Truck,1.81,1.81,1.81,$ Per Gallon
 2026-10-26,Ethanol,Illinois,,Rail,2.095,2.09,2.1,$ Per Gallon
 2026-10-26,Ethanol,Indiana,,Rail,2.155,2.14,2.17,$ Per Gallon
